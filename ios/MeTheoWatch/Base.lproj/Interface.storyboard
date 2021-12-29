@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="19529" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="19514"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="MeTheoWatch" customModuleProvider="target">
+                    <items>
+                        <label height="20" alignment="left" text="MeTheoo" id="Qkq-O6-rGg"/>
+                        <label height="20" alignment="left" text="my message" id="OpZ-FE-V3J"/>
+                    </items>
+                    <connections>
+                        <outlet property="textToDisplay" destination="OpZ-FE-V3J" id="jRQ-Wl-55O"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-26" y="-44"/>
+        </scene>
+    </scenes>
+</document>

@@ -14,6 +14,14 @@
 		6172F2D35A4C3AA820D92908 /* libPods-MeTheo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6423831EA8574132BED9D8CC /* libPods-MeTheo.a */; };
 		7EF68E3733C33B6898317E18 /* libPods-MeTheo-MeTheoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABFE59519B596E51CEFDCCC0 /* libPods-MeTheo-MeTheoTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		EDB21ACD277C86EE00D89167 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDB21ACB277C86EE00D89167 /* Interface.storyboard */; };
+		EDB21ACF277C86EF00D89167 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDB21ACE277C86EF00D89167 /* Assets.xcassets */; };
+		EDB21AD5277C86F000D89167 /* MeTheoWatch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EDB21AD4277C86EF00D89167 /* MeTheoWatch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EDB21ADA277C86F000D89167 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB21AD9277C86F000D89167 /* InterfaceController.swift */; };
+		EDB21ADC277C86F000D89167 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB21ADB277C86F000D89167 /* ExtensionDelegate.swift */; };
+		EDB21ADE277C86F000D89167 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB21ADD277C86F000D89167 /* ComplicationController.swift */; };
+		EDB21AE0277C86F100D89167 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDB21ADF277C86F100D89167 /* Assets.xcassets */; };
+		EDB21AE4277C86F100D89167 /* MeTheoWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = EDB21AC9277C86EE00D89167 /* MeTheoWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,7 +32,46 @@
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
 			remoteInfo = MeTheo;
 		};
+		EDB21AD6277C86F000D89167 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDB21AD3277C86EF00D89167;
+			remoteInfo = "MeTheoWatch WatchKit Extension";
+		};
+		EDB21AE2277C86F100D89167 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDB21AC8277C86EE00D89167;
+			remoteInfo = MeTheoWatch;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EDB21AE5277C86F100D89167 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				EDB21AE4277C86F100D89167 /* MeTheoWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDB21AE8277C86F100D89167 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				EDB21AD5277C86F000D89167 /* MeTheoWatch WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		00E356EE1AD99517003FC87E /* MeTheoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeTheoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +91,15 @@
 		C0A881CF5CF3F2B244570E2A /* Pods-MeTheo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeTheo.debug.xcconfig"; path = "Target Support Files/Pods-MeTheo/Pods-MeTheo.debug.xcconfig"; sourceTree = "<group>"; };
 		D00AAFFCFCFDA5787532823F /* Pods-MeTheo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeTheo.release.xcconfig"; path = "Target Support Files/Pods-MeTheo/Pods-MeTheo.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		EDB21AC9277C86EE00D89167 /* MeTheoWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeTheoWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDB21ACC277C86EE00D89167 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		EDB21ACE277C86EF00D89167 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EDB21AD4277C86EF00D89167 /* MeTheoWatch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "MeTheoWatch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDB21AD9277C86F000D89167 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		EDB21ADB277C86F000D89167 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		EDB21ADD277C86F000D89167 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		EDB21ADF277C86F100D89167 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EDB21AE1277C86F100D89167 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +116,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				6172F2D35A4C3AA820D92908 /* libPods-MeTheo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDB21AD1277C86EF00D89167 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +182,8 @@
 				13B07FAE1A68108700A75B9A /* MeTheo */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* MeTheoTests */,
+				EDB21ACA277C86EE00D89167 /* MeTheoWatch */,
+				EDB21AD8277C86F000D89167 /* MeTheoWatch WatchKit Extension */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				E233CBF5F47BEE60B243DCF8 /* Pods */,
@@ -133,6 +198,8 @@
 			children = (
 				13B07F961A680F5B00A75B9A /* MeTheo.app */,
 				00E356EE1AD99517003FC87E /* MeTheoTests.xctest */,
+				EDB21AC9277C86EE00D89167 /* MeTheoWatch.app */,
+				EDB21AD4277C86EF00D89167 /* MeTheoWatch WatchKit Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -145,8 +212,28 @@
 				6C97AB639B58BBB4B15BBE30 /* Pods-MeTheo-MeTheoTests.debug.xcconfig */,
 				1D0AE47A65C8663E3B452821 /* Pods-MeTheo-MeTheoTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		EDB21ACA277C86EE00D89167 /* MeTheoWatch */ = {
+			isa = PBXGroup;
+			children = (
+				EDB21ACB277C86EE00D89167 /* Interface.storyboard */,
+				EDB21ACE277C86EF00D89167 /* Assets.xcassets */,
+			);
+			path = MeTheoWatch;
+			sourceTree = "<group>";
+		};
+		EDB21AD8277C86F000D89167 /* MeTheoWatch WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EDB21AD9277C86F000D89167 /* InterfaceController.swift */,
+				EDB21ADB277C86F000D89167 /* ExtensionDelegate.swift */,
+				EDB21ADD277C86F000D89167 /* ComplicationController.swift */,
+				EDB21ADF277C86F100D89167 /* Assets.xcassets */,
+				EDB21AE1277C86F100D89167 /* Info.plist */,
+			);
+			path = "MeTheoWatch WatchKit Extension";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,15 +272,51 @@
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				C8AC78B0264D0F9F6F6D630E /* [CP] Embed Pods Frameworks */,
 				ADC9DDC32298B72B3CF5DC8E /* [CP] Copy Pods Resources */,
+				EDB21AE5277C86F100D89167 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				EDB21AE3277C86F100D89167 /* PBXTargetDependency */,
 			);
 			name = MeTheo;
 			productName = MeTheo;
 			productReference = 13B07F961A680F5B00A75B9A /* MeTheo.app */;
 			productType = "com.apple.product-type.application";
+		};
+		EDB21AC8277C86EE00D89167 /* MeTheoWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDB21AEC277C86F100D89167 /* Build configuration list for PBXNativeTarget "MeTheoWatch" */;
+			buildPhases = (
+				EDB21AC7277C86EE00D89167 /* Resources */,
+				EDB21AE8277C86F100D89167 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EDB21AD7277C86F000D89167 /* PBXTargetDependency */,
+			);
+			name = MeTheoWatch;
+			productName = MeTheoWatch;
+			productReference = EDB21AC9277C86EE00D89167 /* MeTheoWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		EDB21AD3277C86EF00D89167 /* MeTheoWatch WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDB21AEB277C86F100D89167 /* Build configuration list for PBXNativeTarget "MeTheoWatch WatchKit Extension" */;
+			buildPhases = (
+				EDB21AD0277C86EF00D89167 /* Sources */,
+				EDB21AD1277C86EF00D89167 /* Frameworks */,
+				EDB21AD2277C86EF00D89167 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MeTheoWatch WatchKit Extension";
+			productName = "MeTheoWatch WatchKit Extension";
+			productReference = EDB21AD4277C86EF00D89167 /* MeTheoWatch WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -201,6 +324,7 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1210;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
@@ -209,6 +333,12 @@
 					};
 					13B07F861A680F5B00A75B9A = {
 						LastSwiftMigration = 1120;
+					};
+					EDB21AC8277C86EE00D89167 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					EDB21AD3277C86EF00D89167 = {
+						CreatedOnToolsVersion = 13.2.1;
 					};
 				};
 			};
@@ -227,6 +357,8 @@
 			targets = (
 				13B07F861A680F5B00A75B9A /* MeTheo */,
 				00E356ED1AD99517003FC87E /* MeTheoTests */,
+				EDB21AC8277C86EE00D89167 /* MeTheoWatch */,
+				EDB21AD3277C86EF00D89167 /* MeTheoWatch WatchKit Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -245,6 +377,23 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDB21AC7277C86EE00D89167 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDB21ACF277C86EF00D89167 /* Assets.xcassets in Resources */,
+				EDB21ACD277C86EE00D89167 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDB21AD2277C86EF00D89167 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDB21AE0277C86F100D89167 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +565,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EDB21AD0277C86EF00D89167 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDB21ADC277C86F000D89167 /* ExtensionDelegate.swift in Sources */,
+				EDB21ADA277C86F000D89167 /* InterfaceController.swift in Sources */,
+				EDB21ADE277C86F000D89167 /* ComplicationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -424,7 +583,28 @@
 			target = 13B07F861A680F5B00A75B9A /* MeTheo */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
+		EDB21AD7277C86F000D89167 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EDB21AD3277C86EF00D89167 /* MeTheoWatch WatchKit Extension */;
+			targetProxy = EDB21AD6277C86F000D89167 /* PBXContainerItemProxy */;
+		};
+		EDB21AE3277C86F100D89167 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EDB21AC8277C86EE00D89167 /* MeTheoWatch */;
+			targetProxy = EDB21AE2277C86F100D89167 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EDB21ACB277C86EE00D89167 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDB21ACC277C86EE00D89167 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
@@ -653,6 +833,162 @@
 			};
 			name = Release;
 		};
+		EDB21AE6277C86F100D89167 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = MeTheoWatch_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = MeTheoWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = org.reactjs.native.example.MeTheo;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.MeTheo.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Debug;
+		};
+		EDB21AE7277C86F100D89167 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = MeTheoWatch_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = MeTheoWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = org.reactjs.native.example.MeTheo;
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.MeTheo.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Release;
+		};
+		EDB21AE9277C86F100D89167 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "MeTheoWatch WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "MeTheoWatch WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKExtensionDelegateClassName = "$(PRODUCT_MODULE_NAME).ExtensionDelegate";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.MeTheo.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Debug;
+		};
+		EDB21AEA277C86F100D89167 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "MeTheoWatch WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "MeTheoWatch WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKExtensionDelegateClassName = "$(PRODUCT_MODULE_NAME).ExtensionDelegate";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.MeTheo.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -679,6 +1015,24 @@
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,
 				83CBBA211A601CBA00E9B192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDB21AEB277C86F100D89167 /* Build configuration list for PBXNativeTarget "MeTheoWatch WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDB21AE9277C86F100D89167 /* Debug */,
+				EDB21AEA277C86F100D89167 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDB21AEC277C86F100D89167 /* Build configuration list for PBXNativeTarget "MeTheoWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDB21AE6277C86F100D89167 /* Debug */,
+				EDB21AE7277C86F100D89167 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

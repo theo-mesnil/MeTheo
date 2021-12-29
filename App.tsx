@@ -1,10 +1,15 @@
 import React, {useState} from 'react';
 import {SafeAreaView, StyleSheet, TextInput, Button, Alert} from 'react-native';
+import * as Watch from 'react-native-watch-connectivity';
 
 const App = () => {
   const [message, setMessage] = useState('');
   const sendMessageToAppleWatch = () => {
-    Alert.alert(`the message "${message}" has been sent`);
+    Watch.sendMessage({message}, error => {
+      if (error) {
+        Alert.alert(`the message "${message}" can't be sent`);
+      }
+    });
   };
   return (
     <SafeAreaView style={styles.container}>
