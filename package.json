@@ -12,10 +12,13 @@
   "dependencies": {
     "react": "17.0.2",
     "react-native": "0.66.4",
+    "react-native-config": "^1.4.5",
+    "react-native-geolocation-service": "^5.3.0-beta.4",
     "react-native-watch-connectivity": "^1.0.4"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
+    "@babel/preset-env": "^7.1.6",
     "@babel/runtime": "^7.12.5",
     "@react-native-community/eslint-config": "^2.0.0",
     "@types/jest": "^26.0.23",
@@ -25,6 +28,8 @@
     "@typescript-eslint/parser": "^5.7.0",
     "babel-jest": "^26.6.3",
     "eslint": "^7.14.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-sort-destructure-keys": "^1.4.0",
     "jest": "^26.6.3",
     "metro-react-native-babel-preset": "^0.66.2",
     "react-test-renderer": "17.0.2",
