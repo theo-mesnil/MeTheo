@@ -30,6 +30,7 @@
     "eslint": "^7.14.0",
     "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-sort-destructure-keys": "^1.4.0",
+    "husky": "^7.0.4",
     "jest": "^26.6.3",
     "metro-react-native-babel-preset": "^0.66.2",
     "react-test-renderer": "17.0.2",
@@ -37,6 +38,12 @@
   },
   "resolutions": {
     "@types/react": "^17"
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,json}": [
+      "prettier --write",
+      "eslint"
+    ]
   },
   "jest": {
     "preset": "react-native",
