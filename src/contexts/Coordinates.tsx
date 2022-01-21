@@ -5,9 +5,6 @@ import Geolocation from 'react-native-geolocation-service';
 
 import { errorLog } from 'utils/logger';
 
-export const STORAGE_LAT = 'METHEO_STORAGE_LAT';
-export const STORAGE_LON = 'METHEO_STORAGE_LON';
-
 export type LatType = number | null;
 export type LonType = number | null;
 export type AuthorizeType = boolean;

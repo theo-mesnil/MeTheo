@@ -1,29 +1,23 @@
-import React, { useEffect } from 'react';
-
-import { SafeAreaView, StyleSheet, Text } from 'react-native';
-
+import React, { useEffect, useState } from 'react';
+import { SafeAreaView, StyleSheet } from 'react-native';
 import { getWeatherByCoordinates } from 'api/weather';
+import { Weather } from 'components/Weather';
 import { useCoordinates } from 'contexts/Coordinates';
 
-// @ts-ignore
-import { Watch } from './components/Watch';
-
-export function Setup() {
+export function Home() {
   const { authorize, lat, lon } = useCoordinates();
+  const [data, setDate] = useState();
 
   useEffect(() => {
     if (authorize && lat && lon) {
-      const data = getWeatherByCoordinates({ lat, lon });
-      data.then((data2) => console.log(data2));
+      const weather = getWeatherByCoordinates({ lat, lon });
+      weather.then((res) => setDate(res));
     }
   }, [authorize, lat, lon]);
 
   return (
     <SafeAreaView style={styles.container}>
-      <Text>lat : {lat}</Text>
-      <Text>lon : {lon}</Text>
-      <Text>authorize : {`${authorize}`}</Text>
-      <Watch />
+      {data && <Weather {...data} />}
     </SafeAreaView>
   );
 }

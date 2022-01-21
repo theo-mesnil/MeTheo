@@ -1,13 +1,17 @@
 import React from 'react';
 
-import { Setup } from 'Setup';
-
 import { CoordinatesProvider } from 'contexts/Coordinates';
+
+import { Home } from 'screens/Home';
+
+// @ts-ignore: apple watch application
+import { Watch } from './components/Watch';
 
 export function App() {
   return (
     <CoordinatesProvider>
-      <Setup />
+      <Home />
+      <Watch />
     </CoordinatesProvider>
   );
 }
