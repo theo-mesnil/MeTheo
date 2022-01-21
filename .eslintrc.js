@@ -24,7 +24,6 @@ module.exports = {
           'sibling',
           'index'
         ],
-        'newlines-between': 'always',
         pathGroups: [
           { pattern: 'api/**', group: 'internal' },
           { pattern: 'components/**', group: 'internal' },
@@ -34,6 +33,7 @@ module.exports = {
           { pattern: 'test/**', group: 'internal' },
           { pattern: 'utils/**', group: 'internal' },
           { pattern: 'react', group: 'external', position: 'before' },
+          { pattern: 'react-native', group: 'external', position: 'before' },
           {
             pattern: 'styled-components',
             group: 'external',
