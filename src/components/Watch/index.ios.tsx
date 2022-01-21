@@ -1,7 +1,8 @@
 import { useEffect } from 'react';
+
 import { Alert } from 'react-native';
-import * as WatchConnect from 'react-native-watch-connectivity';
 import Config from 'react-native-config';
+import * as WatchConnect from 'react-native-watch-connectivity';
 
 export function Watch() {
   useEffect(() => {

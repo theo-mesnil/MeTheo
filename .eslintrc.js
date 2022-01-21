@@ -9,7 +9,41 @@ module.exports = {
     'no-console': 'warn',
     'comma-dangle': ['error', 'never'],
     'import/no-default-export': ['off'],
-    'import/order': ['warn', { 'newlines-between': 'always' }],
+    'import/order': [
+      2,
+      {
+        alphabetize: {
+          order: 'asc',
+          caseInsensitive: true
+        },
+        groups: [
+          'builtin',
+          'external',
+          'internal',
+          'parent',
+          'sibling',
+          'index'
+        ],
+        'newlines-between': 'always',
+        pathGroups: [
+          { pattern: 'api/**', group: 'internal' },
+          { pattern: 'components/**', group: 'internal' },
+          { pattern: 'contexts/**', group: 'internal' },
+          { pattern: 'screens/**', group: 'internal' },
+          { pattern: 'reducers/**', group: 'internal' },
+          { pattern: 'test/**', group: 'internal' },
+          { pattern: 'utils/**', group: 'internal' },
+          { pattern: 'react', group: 'external', position: 'before' },
+          {
+            pattern: 'styled-components',
+            group: 'external',
+            position: 'before'
+          },
+          { pattern: 'styled-system', group: 'external', position: 'before' }
+        ],
+        pathGroupsExcludedImportTypes: ['react']
+      }
+    ],
     'sort-imports': [
       'warn',
       {
@@ -22,5 +56,10 @@ module.exports = {
       'warn',
       { caseSensitive: false }
     ]
+  },
+  settings: {
+    'import/resolve': {
+      moduleDirectory: ['node_modules', 'src']
+    }
   }
 };
