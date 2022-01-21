@@ -24,22 +24,15 @@ module.exports = {
           'sibling',
           'index'
         ],
+        'newlines-between': 'always',
         pathGroups: [
           { pattern: 'api/**', group: 'internal' },
           { pattern: 'components/**', group: 'internal' },
           { pattern: 'contexts/**', group: 'internal' },
+          { pattern: 'navigation', group: 'internal' },
           { pattern: 'screens/**', group: 'internal' },
-          { pattern: 'reducers/**', group: 'internal' },
-          { pattern: 'test/**', group: 'internal' },
-          { pattern: 'utils/**', group: 'internal' },
-          { pattern: 'react', group: 'external', position: 'before' },
-          { pattern: 'react-native', group: 'external', position: 'before' },
-          {
-            pattern: 'styled-components',
-            group: 'external',
-            position: 'before'
-          },
-          { pattern: 'styled-system', group: 'external', position: 'before' }
+          { pattern: 'themes/**', group: 'internal' },
+          { pattern: 'utils/**', group: 'internal' }
         ],
         pathGroupsExcludedImportTypes: ['react']
       }

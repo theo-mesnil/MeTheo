@@ -1,5 +1,4 @@
 import { useEffect } from 'react';
-
 import { Alert } from 'react-native';
 import Config from 'react-native-config';
 import * as WatchConnect from 'react-native-watch-connectivity';
